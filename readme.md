@@ -9,6 +9,17 @@
 - RawRabbit
 - Newtonsoft.json
 
+## Configuration:
+- MS SQL Server: Server=(localdb)\mssqllocaldb;Database=MyDatabase;Trusted_Connection=True;
+- RabbitMQ:
+```
+    Username = "guest",
+    Password = "guest",
+    Port = 5672,
+    VirtualHost = "/",
+    Hostnames = { "localhost" }
+```
+
 ## Comments
 - RabbitMQ consumer is running inside asp.net core application. It should be in a separate windows service, but since it's a test assignment, it's OK.
 - Using MS SQL Server to persist data. The application does not check if data already in the 
